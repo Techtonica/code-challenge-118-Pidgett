@@ -61,7 +61,7 @@ class Parrot {
             };
         } speak(){
             console.log(this.name, "want a cracker!")
-            return this.name + "want a cracker!";
+            return this.name + " want a cracker!";
         }
         }        
 
