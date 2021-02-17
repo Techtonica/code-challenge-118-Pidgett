@@ -72,16 +72,18 @@ class ApprenticeParrot extends Parrot {
 
         speak(){
         this.nudge = this.nudge + 1;
-        if(this.nudge < 4){
-            console.log("😴");
+        if(this.nudge <= 3){
+            console.log("😴")
+            return "😴";
         } else{
-            console.log(this.name, "want a cracker!");
+            console.log(this.name, "want a cracker!")
+            return this.name + "want a cracker!";
         };
     };
  
 }   
 
-let theDog = new ApprenticeParrot("The dog");
+/* let theDog = new ApprenticeParrot("The dog");
 console.log(theDog);
 theDog.speak();//expected "😴"
 theDog.speak();//expected "😴"
@@ -89,6 +91,7 @@ console.log(theDog.nudge);//expected 2
 theDog.speak();//expected "😴"
 theDog.speak();//expected "The dog want a cracker!"
 theDog.speak();//expected "The dog want a cracker!"
+*/
     
 
 let polly = new Parrot("Polly");
